@@ -8,6 +8,7 @@ $out = Join-Path $PSScriptRoot 'packages'
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 
 $map = @{
+    'intel_wifi'        = 'intel_wifi'
     'intel_chipset'     = 'intel_chipset'
     'intel_bluetooth'   = 'intel_bluetooth'
     'intel_mei'         = 'intel_mei'

@@ -1,257 +1,335 @@
-{
-  "schema_version": 3,
-  "version": "1.0.0",
-  "updated": "2026-05-24",
-  "description": "CIODIY driver manifest v3 - yanbai9188-oss/qudong",
-  "repository": "https://github.com/yanbai9188-oss/qudong",
-  "release": "v1.0.0",
-  "mirrors": ["github"],
-  "packages": {
-    "Seed_Intel_Chipset_INF": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_chipset.zip",
-      "version": "10.1.20398.8776",
-      "sha256": "d937dfc1d3bf177dd2197f6ca557489664c9fc06ea847b0f0388869834966354",
-      "category": "chipset",
-      "vendor": "Intel",
-      "priority": 100,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": true,
-      "title": "Intel Chipset INF（全平台通用）",
-      "hwids": ["PCI\\VEN_8086&DEV_43A3", "PCI\\VEN_8086&DEV_43A4"]
-    },
-    "Seed_Intel_SerialIO": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_serialio.zip",
-      "version": "30.100.2413.30",
-      "sha256": "df16db377b29eabdb7bce0ed16c9a46984e140f9b4e20a842457d20e1cbb7cc0",
-      "category": "serial",
-      "vendor": "Intel",
-      "priority": 90,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Intel Serial IO",
-      "hwids": ["PCI\\VEN_8086&DEV_43A8", "PCI\\VEN_8086&DEV_A0A8", "PCI\\VEN_8086&DEV_9A60"]
-    },
-    "Seed_Intel_Bluetooth": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_bluetooth.zip",
-      "version": "23.120.0.3",
-      "sha256": "8fbfa99144affef70a83eedcb788588fb02c3f88dfe9280fb0ad7e8115120916",
-      "category": "bluetooth",
-      "vendor": "Intel",
-      "priority": 85,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Intel 蓝牙",
-      "hwids": ["USB\\VID_8087&PID_07DC", "USB\\VID_8087&PID_0026", "USB\\VID_8087&PID_0032"]
-    },
-    "Seed_Intel_WiFi": {
-      "id": "intel_wifi",
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi.zip",
-      "version": "24.40.0.4",
-      "sha256": "1811bd659a112ee2aea73c78c902cdfc84140e4c567621c777aeb4e17216c41e",
-      "category": "wifi",
-      "vendor": "Intel",
-      "priority": 95,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "installOrder": 25,
-      "verify": "wifi",
-      "rollback": true,
-      "conflicts": ["intel_wifi_7260"],
-      "title": "Intel 无线网卡 (AX/AC 9560+)",
-      "hwids": [
-        "PCI\\VEN_8086&DEV_2723",
-        "PCI\\VEN_8086&DEV_51F0",
-        "PCI\\VEN_8086&DEV_7A70",
-        "PCI\\VEN_8086&DEV_54F0",
-        "PCI\\VEN_8086&DEV_7740"
-      ]
-    },
-    "Seed_Intel_WiFi_7260": {
-      "id": "intel_wifi_7260",
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi_7260.zip",
-      "version": "16.10.0.5",
-      "category": "wifi",
-      "vendor": "Intel",
-      "score": 91,
-      "confidence": "high",
-      "success_rate": 0.982,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "installOrder": 30,
-      "verify": "wifi",
-      "rollback": true,
-      "depends": ["intel_mei"],
-      "conflicts": ["intel_wifi"],
-      "title": "Intel WiFi AC 7260 (Legacy)",
-      "hwids": ["PCI\\VEN_8086&DEV_08B1", "PCI\\VEN_8086&DEV_08B2"]
-    },
-    "Seed_Intel_MEI": {
-      "id": "intel_mei",
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_mei.zip",
-      "version": "2406.5.5.0",
-      "sha256": "9acc1ba103cae45c096b66adcdb1042310ff6165e99f8e76f28df47340cac04e",
-      "category": "mei",
-      "vendor": "Intel",
-      "priority": 90,
-      "risk": "medium",
-      "signed": true,
-      "whql": true,
-      "reboot_required": true,
-      "installOrder": 10,
-      "verify": "enum",
-      "rollback": true,
-      "title": "Intel 管理引擎 MEI",
-      "hwids": ["PCI\\VEN_8086&DEV_43E0", "PCI\\VEN_8086&DEV_A0EB"]
-    },
-    "Seed_Intel_RST": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_rst.zip",
-      "version": "20.x",
-      "sha256": "cbe2e93caa5df1afe22f4b1c3519ac745870fbc43a11b0ad2eecc7193666f495",
-      "category": "storage",
-      "vendor": "Intel",
-      "priority": 80,
-      "risk": "medium",
-      "signed": true,
-      "whql": true,
-      "reboot_required": true,
-      "title": "Intel RST/VMD 快速存储",
-      "hwids": [
-        "PCI\\VEN_8086&DEV_09AB",
-        "PCI\\VEN_8086&DEV_467F",
-        "PCI\\VEN_8086&DEV_A77F",
-        "PCI\\VEN_8086&DEV_7D0B"
-      ]
-    },
-    "Seed_Intel_DTT": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_dtt.zip",
-      "version": "8.7.10802.26924",
-      "sha256": "71ba7c46b2af6dee7bdfcbcacdce0647cebb2047f8cc7a311d057ecaf87631ed",
-      "category": "platform",
-      "vendor": "Intel",
-      "priority": 75,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Intel DTT / DPTF 动态调优",
-      "hwids": [
-        "PCI\\VEN_8086&DEV_9A03",
-        "PCI\\VEN_8086&DEV_A0DE",
-        "PCI\\VEN_8086&DEV_98A4",
-        "ACPI\\INT3400"
-      ]
-    },
-    "Seed_Realtek_LAN": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_lan.zip",
-      "version": "10.79.50.1003",
-      "sha256": "a6cbc3f196d76444685e28669392a13637b7f854612278845dc249eb095c971e",
-      "category": "lan",
-      "vendor": "Realtek",
-      "priority": 95,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Realtek 千兆网卡",
-      "hwids": ["PCI\\VEN_10EC&DEV_8168", "PCI\\VEN_10EC&DEV_8125"]
-    },
-    "Seed_Realtek_Audio": {
-      "id": "realtek_audio",
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_audio.zip",
-      "version": "6.0.9679.1",
-      "sha256": "21721f374b860f2690db6a976ee271b24696dd4ee052d7d02acf5db6202ec161",
-      "category": "audio",
-      "vendor": "Realtek",
-      "score": 91,
-      "confidence": "high",
-      "success_rate": 0.95,
-      "priority": 90,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "installOrder": 40,
-      "verify": "audio",
-      "rollback": true,
-      "title": "Realtek 高清晰音频",
-      "hwids": ["HDAUDIO\\FUNC_01&VEN_10EC&DEV_0897", "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0269"]
-    },
-    "Seed_AMD_Chipset": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/amd_chipset.zip",
-      "version": "8.05.04.516",
-      "sha256": "3d9d33cbe3ffa2cd5311359d7ce59d68210c3538b64ee6bd434aceb82341a43c",
-      "category": "chipset",
-      "vendor": "AMD",
-      "priority": 100,
-      "risk": "medium",
-      "signed": true,
-      "whql": true,
-      "reboot_required": true,
-      "title": "AMD Ryzen Chipset",
-      "install_type": "exe_silent",
-      "hwids": [
-        "PCI\\VEN_1022&DEV_15D4",
-        "PCI\\VEN_1022&DEV_790B",
-        "PCI\\VEN_1022&DEV_780B",
-        "PCI\\VEN_1022&DEV_1482",
-        "PCI\\VEN_1022&DEV_1671"
-      ]
-    },
-    "Seed_Intel_SST": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_sst.zip",
-      "version": "11.2.0.15",
-      "sha256": "17f9f6895e652e3f465335d2645ef02b9be2daa97da39ac514dffb01cd4471fe",
-      "category": "audio",
-      "vendor": "Intel",
-      "priority": 85,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Intel Smart Sound Technology",
-      "hwids": [
-        "PCI\\VEN_8086&DEV_A0C8",
-        "PCI\\VEN_8086&DEV_51CA",
-        "PCI\\VEN_8086&DEV_7A50",
-        "HDAUDIO\\FUNC_01&VEN_8086&DEV_2812"
-      ]
-    },
-    "Seed_Intel_Platform": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_platform.zip",
-      "version": "1.71.99.0",
-      "sha256": "e2e85201defae86333198d330fd5b283cc50f07e3a270d0aafe67b478c574f3f",
-      "category": "platform",
-      "vendor": "Intel",
-      "priority": 70,
-      "risk": "low",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Intel 平台组件 (ICLS/DAL/ME WMI)",
-      "hwids": ["SWD\\DRIVERENUM\\ICLSCLIENT", "SWD\\DRIVERENUM\\DAL"]
-    },
-    "Seed_Intel_Graphics": {
-      "url": "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_graphics.zip",
-      "version": "",
-      "sha256": "",
-      "category": "gpu",
-      "vendor": "Intel",
-      "priority": 80,
-      "risk": "medium",
-      "signed": true,
-      "whql": true,
-      "reboot_required": false,
-      "title": "Intel 核显 / Arc（待上架，包体 >100MB）"
-    }
-  }
+﻿{
+    "schema_version":  3,
+    "version":  "1.0.0",
+    "updated":  "2026-05-24",
+    "description":  "CIODIY driver manifest v3 - yanbai9188-oss/qudong",
+    "repository":  "https://github.com/yanbai9188-oss/qudong",
+    "release":  "v1.0.0",
+    "mirrors":  [
+                    "github"
+                ],
+    "packages":  {
+                     "Seed_Intel_Chipset_INF":  {
+                                                    "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_chipset.zip",
+                                                    "version":  "10.1.20398.8776",
+                                                    "sha256":  "fed61c6d82505475e8829295aae968040ca48cecf8b7d606b2f4100636d67499",
+                                                    "category":  "chipset",
+                                                    "vendor":  "Intel",
+                                                    "priority":  100,
+                                                    "risk":  "low",
+                                                    "signed":  true,
+                                                    "whql":  true,
+                                                    "reboot_required":  true,
+                                                    "title":  "Intel Chipset INF（全平台通用）",
+                                                    "hwids":  [
+                                                                  "PCI\\VEN_8086\u0026DEV_43A3",
+                                                                  "PCI\\VEN_8086\u0026DEV_43A4"
+                                                              ]
+                                                },
+                     "Seed_Intel_SerialIO":  {
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_serialio.zip",
+                                                 "version":  "30.100.2413.30",
+                                                 "sha256":  "eb4e0835fa60d85a025e81e3b1f9973211ebb1e8b1b2caa86c804e0efc0dd6a4",
+                                                 "category":  "serial",
+                                                 "vendor":  "Intel",
+                                                 "priority":  90,
+                                                 "risk":  "low",
+                                                 "signed":  true,
+                                                 "whql":  true,
+                                                 "reboot_required":  false,
+                                                 "title":  "Intel Serial IO",
+                                                 "hwids":  [
+                                                               "PCI\\VEN_8086\u0026DEV_43A8",
+                                                               "PCI\\VEN_8086\u0026DEV_A0A8",
+                                                               "PCI\\VEN_8086\u0026DEV_9A60"
+                                                           ]
+                                             },
+                     "Seed_Intel_Bluetooth":  {
+                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_bluetooth.zip",
+                                                  "version":  "23.120.0.3",
+                                                  "sha256":  "6317866b996d28bcbead385cfa8e323d2cfee504298cb4a364daf13f82589712",
+                                                  "category":  "bluetooth",
+                                                  "vendor":  "Intel",
+                                                  "priority":  85,
+                                                  "risk":  "low",
+                                                  "signed":  true,
+                                                  "whql":  true,
+                                                  "reboot_required":  false,
+                                                  "title":  "Intel 蓝牙",
+                                                  "hwids":  [
+                                                                "USB\\VID_8087\u0026PID_07DC",
+                                                                "USB\\VID_8087\u0026PID_0026",
+                                                                "USB\\VID_8087\u0026PID_0032"
+                                                            ]
+                                              },
+                     "Seed_Intel_WiFi":  {
+                                             "id":  "intel_wifi",
+                                             "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi.zip",
+                                             "version":  "24.40.0.4",
+                                             "sha256":  "7706593ce32a085b420fb89f5ea5920858a13cb482d0a6dcdf66ec5f62fc8253",
+                                             "category":  "wifi",
+                                             "vendor":  "Intel",
+                                             "priority":  95,
+                                             "risk":  "low",
+                                             "signed":  true,
+                                             "whql":  true,
+                                             "reboot_required":  false,
+                                             "installOrder":  25,
+                                             "verify":  "wifi",
+                                             "rollback":  true,
+                                             "conflicts":  [
+                                                               "intel_wifi_7260"
+                                                           ],
+                                             "title":  "Intel 无线网卡 (AX/AC 9560+)",
+                                             "hwids":  [
+                                                           "PCI\\VEN_8086\u0026DEV_2723",
+                                                           "PCI\\VEN_8086\u0026DEV_51F0",
+                                                           "PCI\\VEN_8086\u0026DEV_7A70",
+                                                           "PCI\\VEN_8086\u0026DEV_54F0",
+                                                           "PCI\\VEN_8086\u0026DEV_7740"
+                                                       ]
+                                         },
+                     "Seed_Intel_WiFi_7260":  {
+                                                  "id":  "intel_wifi_7260",
+                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi_7260.zip",
+                                                  "version":  "16.10.0.5",
+                                                  "sha256":  "4cb4913b3fe41ab8a35e7753561f960d6178a798b35a0f3c4f25e0247e2fe090",
+                                                  "category":  "wifi",
+                                                  "vendor":  "Intel",
+                                                  "score":  91,
+                                                  "confidence":  "high",
+                                                  "success_rate":  0.982,
+                                                  "risk":  "low",
+                                                  "signed":  true,
+                                                  "whql":  true,
+                                                  "reboot_required":  false,
+                                                  "installOrder":  30,
+                                                  "verify":  "wifi",
+                                                  "rollback":  true,
+                                                  "depends":  [
+                                                                  "intel_mei"
+                                                              ],
+                                                  "conflicts":  [
+                                                                    "intel_wifi"
+                                                                ],
+                                                  "title":  "Intel WiFi AC 7260 (Legacy)",
+                                                  "hwids":  [
+                                                                "PCI\\VEN_8086\u0026DEV_08B1",
+                                                                "PCI\\VEN_8086\u0026DEV_08B2"
+                                                            ]
+                                              },
+                     "Seed_Intel_Bluetooth_7260":  {
+                                                       "id":  "intel_bluetooth_7260",
+                                                       "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_bluetooth_7260.zip",
+                                                       "version":  "20.100.5.1",
+                                                       "sha256":  "3ffb3964d9c3467f0d950650442a1e9c0c126969f3c1ad48ba9ca90d3efbe659",
+                                                       "category":  "bluetooth",
+                                                       "vendor":  "Intel",
+                                                       "score":  92,
+                                                       "confidence":  "high",
+                                                       "success_rate":  0.98,
+                                                       "risk":  "low",
+                                                       "signed":  true,
+                                                       "whql":  true,
+                                                       "reboot_required":  false,
+                                                       "installOrder":  28,
+                                                       "verify":  "bluetooth",
+                                                       "rollback":  true,
+                                                       "title":  "Intel Bluetooth 7260 (Legacy)",
+                                                       "hwids":  [
+                                                                     "USB\\VID_8087\u0026PID_07DC"
+                                                                 ]
+                                                   },
+                     "Seed_Realtek_LAN_8168":  {
+                                                   "id":  "realtek_lan_8168",
+                                                   "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_lan_8168.zip",
+                                                   "version":  "10.79.50.1003",
+                                                   "sha256":  "c628b804a4aa22d03b08161bbece1be5f4b8ecd901984d25663cea7291d5e7ab",
+                                                   "category":  "lan",
+                                                   "vendor":  "Realtek",
+                                                   "score":  90,
+                                                   "confidence":  "high",
+                                                   "success_rate":  0.96,
+                                                   "risk":  "low",
+                                                   "signed":  true,
+                                                   "whql":  true,
+                                                   "reboot_required":  false,
+                                                   "verify":  "net",
+                                                   "rollback":  true,
+                                                   "title":  "Realtek 8168 专用包",
+                                                   "hwids":  [
+                                                                 "PCI\\VEN_10EC\u0026DEV_8168"
+                                                             ]
+                                               },
+                     "Seed_Intel_MEI":  {
+                                            "id":  "intel_mei",
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_mei.zip",
+                                            "version":  "2406.5.5.0",
+                                            "sha256":  "4ea7abbb3750a40f8c5d7c20eaf6989eaa66b84fd17fe0155d15856892a8f534",
+                                            "category":  "mei",
+                                            "vendor":  "Intel",
+                                            "priority":  90,
+                                            "risk":  "medium",
+                                            "signed":  true,
+                                            "whql":  true,
+                                            "reboot_required":  true,
+                                            "installOrder":  10,
+                                            "verify":  "enum",
+                                            "rollback":  true,
+                                            "title":  "Intel 管理引擎 MEI",
+                                            "hwids":  [
+                                                          "PCI\\VEN_8086\u0026DEV_43E0",
+                                                          "PCI\\VEN_8086\u0026DEV_A0EB"
+                                                      ]
+                                        },
+                     "Seed_Intel_RST":  {
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_rst.zip",
+                                            "version":  "20.x",
+                                            "sha256":  "5e899107193062afcc654cb32e353767955634d3a942eb1d998d4a0a230c318f",
+                                            "category":  "storage",
+                                            "vendor":  "Intel",
+                                            "priority":  80,
+                                            "risk":  "medium",
+                                            "signed":  true,
+                                            "whql":  true,
+                                            "reboot_required":  true,
+                                            "title":  "Intel RST/VMD 快速存储",
+                                            "hwids":  [
+                                                          "PCI\\VEN_8086\u0026DEV_09AB",
+                                                          "PCI\\VEN_8086\u0026DEV_467F",
+                                                          "PCI\\VEN_8086\u0026DEV_A77F",
+                                                          "PCI\\VEN_8086\u0026DEV_7D0B"
+                                                      ]
+                                        },
+                     "Seed_Intel_DTT":  {
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_dtt.zip",
+                                            "version":  "8.7.10802.26924",
+                                            "sha256":  "d484ce78048ae6a803d7c7a43902f1025b7f95eb352c97c7b827115396a92ce1",
+                                            "category":  "platform",
+                                            "vendor":  "Intel",
+                                            "priority":  75,
+                                            "risk":  "low",
+                                            "signed":  true,
+                                            "whql":  true,
+                                            "reboot_required":  false,
+                                            "title":  "Intel DTT / DPTF 动态调优",
+                                            "hwids":  [
+                                                          "PCI\\VEN_8086\u0026DEV_9A03",
+                                                          "PCI\\VEN_8086\u0026DEV_A0DE",
+                                                          "PCI\\VEN_8086\u0026DEV_98A4",
+                                                          "ACPI\\INT3400"
+                                                      ]
+                                        },
+                     "Seed_Realtek_LAN":  {
+                                              "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_lan.zip",
+                                              "version":  "10.79.50.1003",
+                                              "sha256":  "221593c7da89f751c6c70bf0b953b2a8dd457d9a8c2c6244b8ffec77d4cb6062",
+                                              "category":  "lan",
+                                              "vendor":  "Realtek",
+                                              "priority":  95,
+                                              "risk":  "low",
+                                              "signed":  true,
+                                              "whql":  true,
+                                              "reboot_required":  false,
+                                              "title":  "Realtek 千兆网卡",
+                                              "hwids":  [
+                                                            "PCI\\VEN_10EC\u0026DEV_8168",
+                                                            "PCI\\VEN_10EC\u0026DEV_8125"
+                                                        ]
+                                          },
+                     "Seed_Realtek_Audio":  {
+                                                "id":  "realtek_audio",
+                                                "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_audio.zip",
+                                                "version":  "6.0.9679.1",
+                                                "sha256":  "8d64c764f0182f7231a87c6664dcd3ae5af3c8444a33c59a670763da5ea58c74",
+                                                "category":  "audio",
+                                                "vendor":  "Realtek",
+                                                "score":  91,
+                                                "confidence":  "high",
+                                                "success_rate":  0.95,
+                                                "priority":  90,
+                                                "risk":  "low",
+                                                "signed":  true,
+                                                "whql":  true,
+                                                "reboot_required":  false,
+                                                "installOrder":  40,
+                                                "verify":  "audio",
+                                                "rollback":  true,
+                                                "title":  "Realtek 高清晰音频",
+                                                "hwids":  [
+                                                              "HDAUDIO\\FUNC_01\u0026VEN_10EC\u0026DEV_0897",
+                                                              "HDAUDIO\\FUNC_01\u0026VEN_10EC\u0026DEV_0269"
+                                                          ]
+                                            },
+                     "Seed_AMD_Chipset":  {
+                                              "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/amd_chipset.zip",
+                                              "version":  "8.05.04.516",
+                                              "sha256":  "1ed2a8319345fead09851e0c9e905433e64a70e3773ab2ddd8afe9dd4e38ad9e",
+                                              "category":  "chipset",
+                                              "vendor":  "AMD",
+                                              "priority":  100,
+                                              "risk":  "medium",
+                                              "signed":  true,
+                                              "whql":  true,
+                                              "reboot_required":  true,
+                                              "title":  "AMD Ryzen Chipset",
+                                              "install_type":  "exe_silent",
+                                              "hwids":  [
+                                                            "PCI\\VEN_1022\u0026DEV_15D4",
+                                                            "PCI\\VEN_1022\u0026DEV_790B",
+                                                            "PCI\\VEN_1022\u0026DEV_780B",
+                                                            "PCI\\VEN_1022\u0026DEV_1482",
+                                                            "PCI\\VEN_1022\u0026DEV_1671"
+                                                        ]
+                                          },
+                     "Seed_Intel_SST":  {
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_sst.zip",
+                                            "version":  "11.2.0.15",
+                                            "sha256":  "8b6eedfafe6b9f1be7521fc45063ada87e9364d89333c9f476bc9398b16727d8",
+                                            "category":  "audio",
+                                            "vendor":  "Intel",
+                                            "priority":  85,
+                                            "risk":  "low",
+                                            "signed":  true,
+                                            "whql":  true,
+                                            "reboot_required":  false,
+                                            "title":  "Intel Smart Sound Technology",
+                                            "hwids":  [
+                                                          "PCI\\VEN_8086\u0026DEV_A0C8",
+                                                          "PCI\\VEN_8086\u0026DEV_51CA",
+                                                          "PCI\\VEN_8086\u0026DEV_7A50",
+                                                          "HDAUDIO\\FUNC_01\u0026VEN_8086\u0026DEV_2812"
+                                                      ]
+                                        },
+                     "Seed_Intel_Platform":  {
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_platform.zip",
+                                                 "version":  "1.71.99.0",
+                                                 "sha256":  "1a7dc14bdd6f613c1e27e812ca105002ab124b6db66d83b978b0b927cdae5a10",
+                                                 "category":  "platform",
+                                                 "vendor":  "Intel",
+                                                 "priority":  70,
+                                                 "risk":  "low",
+                                                 "signed":  true,
+                                                 "whql":  true,
+                                                 "reboot_required":  false,
+                                                 "title":  "Intel 平台组件 (ICLS/DAL/ME WMI)",
+                                                 "hwids":  [
+                                                               "SWD\\DRIVERENUM\\ICLSCLIENT",
+                                                               "SWD\\DRIVERENUM\\DAL"
+                                                           ]
+                                             },
+                     "Seed_Intel_Graphics":  {
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_graphics.zip",
+                                                 "version":  "",
+                                                 "sha256":  "",
+                                                 "category":  "gpu",
+                                                 "vendor":  "Intel",
+                                                 "priority":  80,
+                                                 "risk":  "medium",
+                                                 "signed":  true,
+                                                 "whql":  true,
+                                                 "reboot_required":  false,
+                                                 "title":  "Intel 核显 / Arc（待上架，包体 \u003e100MB）"
+                                             }
+                 }
 }
