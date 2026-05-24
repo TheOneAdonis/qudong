@@ -1,7 +1,7 @@
 ﻿{
     "schema_version":  3,
     "version":  "1.0.0",
-    "updated":  "2026-05-25",
+    "updated":  "2026-05-24",
     "description":  "CIODIY driver manifest v3 - yanbai9188-oss/qudong",
     "repository":  "https://github.com/yanbai9188-oss/qudong",
     "release":  "v1.0.0",
@@ -326,43 +326,66 @@
                                                            ]
                                              },
                      "Seed_Intel_DisplayAudio":  {
-                                                       "id":  "intel_display_audio",
-                                                       "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_display_audio.zip",
-                                                       "version":  "2023.02",
-                                                       "sha256":  "257a9aada82c57d9ccbce61292964ae97c12f35b6d7a3d45d59f0eff97f512de",
-                                                       "category":  "audio",
-                                                       "vendor":  "Intel",
-                                                       "score":  72,
-                                                       "confidence":  "medium",
-                                                       "success_rate":  0.88,
-                                                       "priority":  70,
-                                                       "risk":  "medium",
-                                                       "signed":  true,
-                                                       "whql":  true,
-                                                       "reboot_required":  false,
-                                                       "installOrder":  45,
-                                                       "verify":  "audio",
-                                                       "rollback":  true,
-                                                       "conflicts":  [
-                                                                         "intel_sst"
-                                                                     ],
-                                                       "title":  "Intel Display Audio（含核显完整包，约 1.2GB）",
-                                                       "hwids":  [
-                                                                     "HDAUDIO\\FUNC_01\u0026VEN_8086\u0026DEV_2812"
-                                                                 ]
-                                                   },
+                                                     "id":  "intel_display_audio",
+                                                     "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_display_audio.zip",
+                                                     "version":  "2023.02",
+                                                     "sha256":  "257a9aada82c57d9ccbce61292964ae97c12f35b6d7a3d45d59f0eff97f512de",
+                                                     "category":  "audio",
+                                                     "vendor":  "Intel",
+                                                     "score":  72,
+                                                     "confidence":  "medium",
+                                                     "success_rate":  0.88,
+                                                     "priority":  70,
+                                                     "risk":  "medium",
+                                                     "signed":  true,
+                                                     "whql":  true,
+                                                     "reboot_required":  false,
+                                                     "installOrder":  45,
+                                                     "verify":  "audio",
+                                                     "rollback":  true,
+                                                     "conflicts":  [
+                                                                       "intel_sst"
+                                                                   ],
+                                                     "title":  "Intel Display Audio（含核显完整包，约 1.2GB）",
+                                                     "hwids":  [
+                                                                   "HDAUDIO\\FUNC_01\u0026VEN_8086\u0026DEV_2812"
+                                                               ]
+                                                 },
                      "Seed_Intel_Graphics":  {
+                                                 "id":  "intel_graphics",
                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_graphics.zip",
-                                                 "version":  "",
-                                                 "sha256":  "",
+                                                 "version":  "32.0.101.7082",
+                                                 "sha256":  "c7f42cf46e007563bfa1d4c482c5c6d30e5fdda50ab63e7bc65ac7c95440168e",
                                                  "category":  "gpu",
                                                  "vendor":  "Intel",
-                                                 "priority":  80,
+                                                 "score":  90,
+                                                 "confidence":  "high",
+                                                 "success_rate":  0.94,
+                                                 "priority":  85,
                                                  "risk":  "medium",
                                                  "signed":  true,
                                                  "whql":  true,
-                                                 "reboot_required":  false,
-                                                 "title":  "Intel 核显 / Arc（待上架，包体 \u003e100MB）"
+                                                 "reboot_required":  true,
+                                                 "installOrder":  35,
+                                                 "verify":  "gpu",
+                                                 "rollback":  true,
+                                                 "title":  "Intel 核显 UHD / Iris Xe (DCH)",
+                                                 "hwids":  [
+                                                               "PCI\\VEN_8086\u0026DEV_9A40",
+                                                               "PCI\\VEN_8086\u0026DEV_9A49",
+                                                               "PCI\\VEN_8086\u0026DEV_9A60",
+                                                               "PCI\\VEN_8086\u0026DEV_9A68",
+                                                               "PCI\\VEN_8086\u0026DEV_9A70",
+                                                               "PCI\\VEN_8086\u0026DEV_9A78",
+                                                               "PCI\\VEN_8086\u0026DEV_4680",
+                                                               "PCI\\VEN_8086\u0026DEV_4688",
+                                                               "PCI\\VEN_8086\u0026DEV_4690",
+                                                               "PCI\\VEN_8086\u0026DEV_46A6",
+                                                               "PCI\\VEN_8086\u0026DEV_46D0",
+                                                               "PCI\\VEN_8086\u0026DEV_46D2",
+                                                               "PCI\\VEN_8086\u0026DEV_A7A0",
+                                                               "PCI\\VEN_8086\u0026DEV_A7A1"
+                                                           ]
                                              }
                  }
 }
