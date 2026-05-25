@@ -1,7 +1,7 @@
 #requires -Version 5.1
 # Build ZIPs, refresh manifest sha256, upload to GitHub Release, push manifest
 param(
-    [string]$Tag = 'v1.0.0',
+    [string]$Tag = 'v1.1.0',
     [string]$Repo = 'yanbai9188-oss/qudong',
     [switch]$SkipUpload,
     [switch]$SkipPush

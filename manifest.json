@@ -1,16 +1,16 @@
 ﻿{
     "schema_version":  3,
-    "version":  "1.2.0",
+    "version":  "1.3.0",
     "updated":  "2026-05-24",
-    "description":  "CIODIY driver manifest v3 - Win10/Win11, Win10-first batch reinstall",
+    "description":  "CIODIY driver manifest v3 - Win10/Win11, release v1.1.0 unified URLs",
     "repository":  "https://github.com/yanbai9188-oss/qudong",
-    "release":  "v1.0.0",
+    "release":  "v1.1.0",
     "mirrors":  [
                     "github"
                 ],
     "packages":  {
                      "Seed_Intel_Chipset_INF":  {
-                                                    "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_chipset.zip",
+                                                    "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_chipset.zip",
                                                     "version":  "10.1.20398.8776",
                                                     "sha256":  "fed61c6d82505475e8829295aae968040ca48cecf8b7d606b2f4100636d67499",
                                                     "category":  "chipset",
@@ -31,7 +31,7 @@
                                                            ]
                                                 },
                      "Seed_Intel_SerialIO":  {
-                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_serialio.zip",
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_serialio.zip",
                                                  "version":  "30.100.2413.30",
                                                  "sha256":  "eb4e0835fa60d85a025e81e3b1f9973211ebb1e8b1b2caa86c804e0efc0dd6a4",
                                                  "category":  "serial",
@@ -53,7 +53,7 @@
                                                         ]
                                              },
                      "Seed_Intel_Bluetooth":  {
-                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_bluetooth.zip",
+                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_bluetooth.zip",
                                                   "version":  "23.120.0.3",
                                                   "sha256":  "6317866b996d28bcbead385cfa8e323d2cfee504298cb4a364daf13f82589712",
                                                   "category":  "bluetooth",
@@ -76,7 +76,7 @@
                                               },
                      "Seed_Intel_WiFi":  {
                                              "id":  "intel_wifi",
-                                             "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi.zip",
+                                             "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_wifi.zip",
                                              "version":  "24.40.0.4",
                                              "sha256":  "7706593ce32a085b420fb89f5ea5920858a13cb482d0a6dcdf66ec5f62fc8253",
                                              "category":  "wifi",
@@ -107,9 +107,9 @@
                                          },
                      "Seed_Intel_WiFi_7260":  {
                                                   "id":  "intel_wifi_7260",
-                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi_7260.zip",
+                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_wifi_7260.zip",
                                                   "version":  "16.10.0.5",
-                                                  "sha256":  "4cb4913b3fe41ab8a35e7753561f960d6178a798b35a0f3c4f25e0247e2fe090",
+                                                  "sha256":  "1e678f10a35bd3b75492d385884d4cda956df983631a7223104b85493fce4c14",
                                                   "category":  "wifi",
                                                   "vendor":  "Intel",
                                                   "score":  91,
@@ -141,9 +141,9 @@
                                               },
                      "Seed_Intel_Bluetooth_7260":  {
                                                        "id":  "intel_bluetooth_7260",
-                                                       "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_bluetooth_7260.zip",
+                                                       "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_bluetooth_7260.zip",
                                                        "version":  "20.100.5.1",
-                                                       "sha256":  "3ffb3964d9c3467f0d950650442a1e9c0c126969f3c1ad48ba9ca90d3efbe659",
+                                                       "sha256":  "f567ab5467a660ec49eb09ffe44a8a46fc4ac0c72c0bc3a66d65240b1561119c",
                                                        "category":  "bluetooth",
                                                        "vendor":  "Intel",
                                                        "score":  92,
@@ -168,9 +168,9 @@
                                                    },
                      "Seed_Realtek_LAN_8168":  {
                                                    "id":  "realtek_lan_8168",
-                                                   "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_lan_8168.zip",
+                                                   "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/realtek_lan_8168.zip",
                                                    "version":  "10.79.50.1003",
-                                                   "sha256":  "c628b804a4aa22d03b08161bbece1be5f4b8ecd901984d25663cea7291d5e7ab",
+                                                   "sha256":  "5abf7348120acee87d8cee4b6d75078364e596ace8410cf7be339a1f092a3fbc",
                                                    "category":  "lan",
                                                    "vendor":  "Realtek",
                                                    "score":  90,
@@ -193,7 +193,7 @@
                                                },
                      "Seed_Intel_MEI":  {
                                             "id":  "intel_mei",
-                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_mei.zip",
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_mei.zip",
                                             "version":  "2406.5.5.0",
                                             "sha256":  "4ea7abbb3750a40f8c5d7c20eaf6989eaa66b84fd17fe0155d15856892a8f534",
                                             "category":  "mei",
@@ -217,7 +217,7 @@
                                                    ]
                                         },
                      "Seed_Intel_RST":  {
-                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_rst.zip",
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_rst.zip",
                                             "version":  "20.x",
                                             "sha256":  "5e899107193062afcc654cb32e353767955634d3a942eb1d998d4a0a230c318f",
                                             "category":  "storage",
@@ -240,7 +240,7 @@
                                                    ]
                                         },
                      "Seed_Intel_DTT":  {
-                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_dtt.zip",
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_dtt.zip",
                                             "version":  "8.7.10802.26924",
                                             "sha256":  "d484ce78048ae6a803d7c7a43902f1025b7f95eb352c97c7b827115396a92ce1",
                                             "category":  "platform",
@@ -263,7 +263,7 @@
                                                    ]
                                         },
                      "Seed_Realtek_LAN":  {
-                                              "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_lan.zip",
+                                              "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/realtek_lan.zip",
                                               "version":  "10.79.50.1003",
                                               "sha256":  "221593c7da89f751c6c70bf0b953b2a8dd457d9a8c2c6244b8ffec77d4cb6062",
                                               "category":  "lan",
@@ -285,7 +285,7 @@
                                           },
                      "Seed_Realtek_Audio":  {
                                                 "id":  "realtek_audio",
-                                                "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_audio.zip",
+                                                "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/realtek_audio.zip",
                                                 "version":  "6.0.9679.1",
                                                 "sha256":  "8d64c764f0182f7231a87c6664dcd3ae5af3c8444a33c59a670763da5ea58c74",
                                                 "category":  "audio",
@@ -312,7 +312,7 @@
                                                        ]
                                             },
                      "Seed_AMD_Chipset":  {
-                                              "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/amd_chipset.zip",
+                                              "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/amd_chipset.zip",
                                               "version":  "8.05.04.516",
                                               "sha256":  "1ed2a8319345fead09851e0c9e905433e64a70e3773ab2ddd8afe9dd4e38ad9e",
                                               "category":  "chipset",
@@ -338,7 +338,7 @@
                                           },
                      "Seed_Intel_SST":  {
                                             "id":  "intel_sst",
-                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_sst.zip",
+                                            "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_sst.zip",
                                             "version":  "11.2.0.15",
                                             "sha256":  "8b6eedfafe6b9f1be7521fc45063ada87e9364d89333c9f476bc9398b16727d8",
                                             "category":  "audio",
@@ -367,7 +367,7 @@
                                                    ]
                                         },
                      "Seed_Intel_Platform":  {
-                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_platform.zip",
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_platform.zip",
                                                  "version":  "1.71.99.0",
                                                  "sha256":  "1a7dc14bdd6f613c1e27e812ca105002ab124b6db66d83b978b0b927cdae5a10",
                                                  "category":  "platform",
@@ -389,9 +389,9 @@
                                              },
                      "Seed_Intel_DisplayAudio":  {
                                                      "id":  "intel_display_audio",
-                                                     "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_display_audio.zip",
+                                                     "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_display_audio.zip",
                                                      "version":  "2023.02",
-                                                     "sha256":  "257a9aada82c57d9ccbce61292964ae97c12f35b6d7a3d45d59f0eff97f512de",
+                                                     "sha256":  "212f8318331490d101aad0088fba9b55b7fa5a583acc98c5ae262593742530e8",
                                                      "category":  "audio",
                                                      "vendor":  "Intel",
                                                      "score":  72,
@@ -419,7 +419,7 @@
                                                  },
                      "Seed_Intel_Graphics":  {
                                                  "id":  "intel_graphics",
-                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_graphics.zip",
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_graphics.zip",
                                                  "version":  "32.0.101.7082",
                                                  "sha256":  "c7f42cf46e007563bfa1d4c482c5c6d30e5fdda50ab63e7bc65ac7c95440168e",
                                                  "category":  "gpu",
@@ -472,7 +472,7 @@
                      "Seed_Intel_USB3":  {
                                              "confidence":  "high",
                                              "win10_preferred":  true,
-                                             "sha256":  "3512c606a0b9d8277ef03df59e8f72d1991e6ecb93e2259c0714966376c554cd",
+                                             "sha256":  "9ae3412979855605d066a1e1de8cdd3bce42df4407fa9d4301804a8b1ca00732",
                                              "verify":  "enum",
                                              "version":  "10.1.23.5",
                                              "os":  [
@@ -501,14 +501,14 @@
                                              "installOrder":  15,
                                              "priority":  88,
                                              "risk":  "low",
-                                             "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_usb3.zip",
+                                             "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_usb3.zip",
                                              "success_rate":  0.93,
                                              "id":  "intel_usb3"
                                          },
                      "Seed_Intel_LAN_I219":  {
                                                  "confidence":  "high",
                                                  "win10_preferred":  true,
-                                                 "sha256":  "4da96ab86552c9fb414c4f197e83b3f7bba091a475411c9d8fb05c86913913ed",
+                                                 "sha256":  "ee51ab7beac08388c916e3548fa2f4a2c8a12a55da43243b15494f560bf2ab23",
                                                  "verify":  "net",
                                                  "version":  "12.19.2.45",
                                                  "os":  [
@@ -534,12 +534,12 @@
                                                  "installOrder":  32,
                                                  "priority":  92,
                                                  "risk":  "low",
-                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_lan_i219.zip",
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_lan_i219.zip",
                                                  "success_rate":  0.94,
                                                  "id":  "intel_lan_i219"
                                              },
                      "Seed_Intel_WiFi_8260":  {
-                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/intel_wifi_8260.zip",
+                                                  "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/intel_wifi_8260.zip",
                                                   "rollback":  true,
                                                   "id":  "intel_wifi_8260",
                                                   "priority":  94,
@@ -570,7 +570,7 @@
                                                              "win10",
                                                              "win11"
                                                          ],
-                                                  "sha256":  "f6c1e72c8789cdc5913273e600b908ee23e425a36dfc19d1a11f453d8a064b73",
+                                                  "sha256":  "bdcc587e31cb8bc39e764ad25677b3c16af078883dbb273288ebbbe48f917699",
                                                   "depends":  [
                                                                   "intel_mei"
                                                               ],
@@ -579,7 +579,7 @@
                      "Seed_Realtek_CardReader":  {
                                                      "confidence":  "high",
                                                      "win10_preferred":  true,
-                                                     "sha256":  "91b1152b45923bb12c805a4415c238e388110ed9c8fe298c04f587cfafe569e9",
+                                                     "sha256":  "1c07779741bd2924f93a799159d5be27f0446cd4cbb59f698169e583c70badcb",
                                                      "verify":  "enum",
                                                      "version":  "10.0.22000.31274",
                                                      "os":  [
@@ -604,10 +604,174 @@
                                                      "installOrder":  55,
                                                      "priority":  75,
                                                      "risk":  "low",
-                                                     "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.0.0/realtek_cardreader.zip",
+                                                     "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/realtek_cardreader.zip",
                                                      "success_rate":  0.91,
                                                      "id":  "realtek_cardreader"
-                                                 }
+                                                 },
+                     "Seed_HP_Printer_PCL":  {
+                                                 "confidence":  "medium",
+                                                 "win10_preferred":  true,
+                                                 "sha256":  "6ad3eb56a635182a1e592baec612142c7d841c8e42cf485c29d3e53459b4a7cf",
+                                                 "verify":  "enum",
+                                                 "version":  "10.0.22621.1",
+                                                 "os":  [
+                                                            "win10",
+                                                            "win11"
+                                                        ],
+                                                 "hwids":  [
+                                                               "USBPRINT\\Hewlett-PackardHP_LaserJet_1020",
+                                                               "USBPRINT\\Hewlett-PackardHP_LaserJet_Pro",
+                                                               "USBPRINT\\Hewlett-PackardHP_LaserJet_1018"
+                                                           ],
+                                                 "reboot_required":  false,
+                                                 "score":  80,
+                                                 "title":  "HP LaserJet / PCL 閫氱敤鎵撳嵃椹卞姩",
+                                                 "vendor":  "HP",
+                                                 "signed":  true,
+                                                 "category":  "printer",
+                                                 "whql":  true,
+                                                 "rollback":  true,
+                                                 "installOrder":  70,
+                                                 "priority":  65,
+                                                 "risk":  "low",
+                                                 "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/hp_printer_pcl.zip",
+                                                 "success_rate":  0.87,
+                                                 "id":  "hp_printer_pcl"
+                                             },
+                     "Seed_Synaptics_TouchPad":  {
+                                                     "confidence":  "high",
+                                                     "win10_preferred":  true,
+                                                     "sha256":  "53a03be436e3c564335a3ea4d0978c320e24f8f7b06cf61e42fbe2f4aa441da6",
+                                                     "verify":  "enum",
+                                                     "version":  "19.5.29.2",
+                                                     "os":  [
+                                                                "win10",
+                                                                "win11"
+                                                            ],
+                                                     "hwids":  [
+                                                                   "HID\\SYNA1B49",
+                                                                   "HID\\SYNA7501",
+                                                                   "HID\\SYNA1202",
+                                                                   "ACPI\\SYNA1202",
+                                                                   "ACPI\\SYNA3101",
+                                                                   "HID\\SYNA3101"
+                                                               ],
+                                                     "reboot_required":  false,
+                                                     "score":  85,
+                                                     "title":  "Synaptics 瑙︽懜鏉?/ ClickPad",
+                                                     "vendor":  "Synaptics",
+                                                     "signed":  true,
+                                                     "category":  "input",
+                                                     "whql":  true,
+                                                     "rollback":  true,
+                                                     "installOrder":  58,
+                                                     "priority":  60,
+                                                     "risk":  "low",
+                                                     "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/synaptics_touchpad.zip",
+                                                     "success_rate":  0.9,
+                                                     "id":  "synaptics_touchpad"
+                                                 },
+                     "Seed_NVIDIA_DCH":  {
+                                             "confidence":  "high",
+                                             "win10_preferred":  true,
+                                             "sha256":  "dcf2f99c4d136d0d4f9555506b49770822716cfa5459155b963f58abc84622c6",
+                                             "verify":  "gpu",
+                                             "version":  "31.0.15.5123",
+                                             "os":  [
+                                                        "win10",
+                                                        "win11"
+                                                    ],
+                                             "hwids":  [
+                                                           "PCI\\VEN_10DE\u0026DEV_1C82",
+                                                           "PCI\\VEN_10DE\u0026DEV_1C83",
+                                                           "PCI\\VEN_10DE\u0026DEV_1B81",
+                                                           "PCI\\VEN_10DE\u0026DEV_1B84",
+                                                           "PCI\\VEN_10DE\u0026DEV_2484",
+                                                           "PCI\\VEN_10DE\u0026DEV_2487",
+                                                           "PCI\\VEN_10DE\u0026DEV_2204",
+                                                           "PCI\\VEN_10DE\u0026DEV_2206",
+                                                           "PCI\\VEN_10DE\u0026DEV_2504",
+                                                           "PCI\\VEN_10DE\u0026DEV_2782",
+                                                           "PCI\\VEN_10DE\u0026DEV_2882",
+                                                           "PCI\\VEN_10DE\u0026DEV_1F02"
+                                                       ],
+                                             "reboot_required":  true,
+                                             "score":  88,
+                                             "title":  "NVIDIA GeForce DCH (Catalog WHQL, Win10/11)",
+                                             "vendor":  "NVIDIA",
+                                             "signed":  true,
+                                             "category":  "gpu",
+                                             "whql":  true,
+                                             "rollback":  true,
+                                             "installOrder":  38,
+                                             "priority":  82,
+                                             "risk":  "medium",
+                                             "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/nvidia_dch_gpu.zip",
+                                             "success_rate":  0.92,
+                                             "id":  "nvidia_dch_gpu"
+                                         },
+                     "Seed_ELAN_TouchPad":  {
+                                                "confidence":  "high",
+                                                "win10_preferred":  true,
+                                                "sha256":  "480c639f9deea7b80e30009c8bc67d9ed7cd9fbca885642e0249996b7703b445",
+                                                "verify":  "enum",
+                                                "version":  "18.6.30.2",
+                                                "os":  [
+                                                           "win10",
+                                                           "win11"
+                                                       ],
+                                                "hwids":  [
+                                                              "HID\\ELAN1200",
+                                                              "HID\\ELAN0708",
+                                                              "HID\\ELAN0501",
+                                                              "HID\\ELAN1000",
+                                                              "ACPI\\ELAN1200"
+                                                          ],
+                                                "reboot_required":  false,
+                                                "score":  84,
+                                                "title":  "ELAN 绮惧瘑瑙︽懜鏉?PrecisionTouchPad",
+                                                "vendor":  "ELAN",
+                                                "signed":  true,
+                                                "category":  "input",
+                                                "whql":  true,
+                                                "rollback":  true,
+                                                "installOrder":  59,
+                                                "priority":  59,
+                                                "risk":  "low",
+                                                "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/elan_touchpad.zip",
+                                                "success_rate":  0.89,
+                                                "id":  "elan_touchpad"
+                                            },
+                     "Seed_Canon_Printer":  {
+                                                "confidence":  "medium",
+                                                "win10_preferred":  true,
+                                                "sha256":  "ca1eee129389b2a4c5c79e579f5d62555541080de3acd23c607c1ebb4537ae32",
+                                                "verify":  "enum",
+                                                "version":  "10.0.22621.1",
+                                                "os":  [
+                                                           "win10",
+                                                           "win11"
+                                                       ],
+                                                "hwids":  [
+                                                              "USB\\VID_04A9\u0026PID_2676",
+                                                              "USB\\VID_04A9\u0026PID_264D",
+                                                              "USB\\VID_04A9\u0026PID_2774"
+                                                          ],
+                                                "reboot_required":  false,
+                                                "score":  79,
+                                                "title":  "Canon imageCLASS / UFRII 鎵撳嵃椹卞姩",
+                                                "vendor":  "Canon",
+                                                "signed":  true,
+                                                "category":  "printer",
+                                                "whql":  true,
+                                                "rollback":  true,
+                                                "installOrder":  71,
+                                                "priority":  71,
+                                                "risk":  "low",
+                                                "url":  "https://github.com/yanbai9188-oss/qudong/releases/download/v1.1.0/canon_printer_ufrii.zip",
+                                                "success_rate":  0.86,
+                                                "id":  "canon_printer_ufrii"
+                                            }
                  },
     "target_os":  [
                       "win10",

@@ -29,6 +29,11 @@ $map = @{
     'intel_wifi_8260'   = 'intel_wifi_8260'
     'realtek_cardreader' = 'realtek_cardreader'
     'Intel_DisplayAudio' = 'intel_display_audio'
+    'nvidia_dch_gpu'     = 'nvidia_dch_gpu'
+    'synaptics_touchpad' = 'synaptics_touchpad'
+    'elan_touchpad'      = 'elan_touchpad'
+    'hp_printer_pcl'     = 'hp_printer_pcl'
+    'canon_printer_ufrii' = 'canon_printer_ufrii'
 }
 
 Write-Host 'Building release ZIPs...'
@@ -36,6 +41,12 @@ foreach ($folder in $map.Keys) {
     $src = Join-Path $drivers $folder
     if (-not (Test-Path $src)) {
         Write-Host "  skip missing: $folder"
+        continue
+    }
+    Get-ChildItem $src -Filter 'catalog_driver.cab' -Recurse -EA SilentlyContinue | Remove-Item -Force -EA SilentlyContinue
+    $infCount = @(Get-ChildItem $src -Filter '*.inf' -Recurse -EA SilentlyContinue).Count
+    if ($infCount -eq 0) {
+        Write-Host "  skip no inf: $folder"
         continue
     }
     $zipName = $map[$folder] + '.zip'
@@ -48,4 +59,4 @@ foreach ($folder in $map.Keys) {
 
 Copy-Item (Join-Path $root 'driver_packages.json') (Join-Path $PSScriptRoot 'manifest.json') -Force
 Write-Host "`nPackages: $out"
-Write-Host "Upload to: https://github.com/yanbai9188-oss/qudong/releases/new?tag=v1.0.0"
+Write-Host "Upload: Publish-Release.ps1 -Tag v1.1.0"
