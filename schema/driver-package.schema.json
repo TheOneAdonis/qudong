@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/TheOneAdonis/qudong/schema/driver-package.schema.json",
+  "title": "Qudong driver manifest schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "version",
+    "updated",
+    "packages",
+    "target_os"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 3
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "description": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "mirrors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_os": {
+      "type": "array",
+      "items": {
+        "enum": ["win10", "win11"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "primary_os": {
+      "enum": ["win10", "win11"]
+    },
+    "min_os_build": {
+      "type": "integer"
+    },
+    "packages": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/package"
+      }
+    }
+  },
+  "$defs": {
+    "package": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "vendor",
+        "category",
+        "deviceClass",
+        "version",
+        "os",
+        "hwids",
+        "risk",
+        "signed",
+        "whql",
+        "reboot_required"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_\-.]*$"
+        },
+        "url": {
+          "type": ["string", "null"]
+        },
+        "version": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": ["string", "null"],
+          "pattern": "^$|^[A-Fa-f0-9]{64}$"
+        },
+        "category": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "confidence": {
+          "enum": ["low", "medium", "high"]
+        },
+        "success_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "risk": {
+          "enum": ["low", "medium", "high"]
+        },
+        "signed": {
+          "type": "boolean"
+        },
+        "whql": {
+          "type": "boolean"
+        },
+        "reboot_required": {
+          "type": "boolean"
+        },
+        "installOrder": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verify": {
+          "type": "string"
+        },
+        "rollback": {
+          "type": "boolean"
+        },
+        "depends": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "conflicts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "hwids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "os": {
+          "type": "array",
+          "items": {
+            "enum": ["win10", "win11"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "deviceClass": {
+          "type": "string"
+        },
+        "install_type": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "catalog_fallback": {
+          "type": "boolean"
+        },
+        "local_only": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        },
+        "advisory": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": ["offline_bootstrap", "installable", "advisory_only"]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
